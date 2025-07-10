@@ -33,5 +33,5 @@ Welcome to my personal front-end developer portfolio website — a space where c
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/Govinda222/portfolio.git
    cd portfolio
