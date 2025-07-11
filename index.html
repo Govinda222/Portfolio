@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <title>Govinda's Portfolio</title>
 </head>
 <body>
@@ -46,19 +45,21 @@
 
     <!-- Picture Section -->
     <section class="px-4 sm:px-10 md:px-20 lg:px-[10rem] mt-10">
-      <div class="w-full h-[30rem] sm:h-[40rem] md:h-[50rem] lg:h-[60rem] overflow-hidden rounded-xl">
-        <img src="./assets/Mypic.jpg" alt="Govinda's Profile Picture" class="w-full h-full object-cover object-center" />
+      <div class="w-full max-w-4xl mx-auto overflow-hidden rounded-xl">
+        <img src="./assets/Mypic.jpg" alt="Govinda's Profile Picture" class="w-full h-auto object-cover object-center rounded-xl" />
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="px-4 sm:px-10 md:px-20 lg:px-[10rem] mt-20 flex justify-center">
+    <section class="relative px-4 sm:px-10 md:px-20 lg:px-[10rem] mt-20 flex justify-center">
       <div class="text text-center w-full sm:w-4/5 md:w-2/3 relative">
-        <!-- Floating Icons -->
-        <img src="./assets/image 222.png" class="w-10 sm:w-14 md:w-16 absolute -top-6 sm:-top-10 -left-4 sm:-left-10 rotate-[20deg]" alt="VS Code Icon">
-        <img src="./assets/image 223.png" class="w-10 sm:w-14 md:w-16 absolute -top-6 sm:-top-10 -right-4 sm:-right-10 rotate-12" alt="HTML Icon">
-        <img src="./assets/image 224.png" class="w-10 sm:w-14 md:w-16 absolute -bottom-6 sm:-bottom-10 left-4 sm:left-10 rotate-[340deg]" alt="JS Icon">
-        <img src="./assets/image 225.png" class="w-10 sm:w-14 md:w-16 absolute -bottom-6 sm:-bottom-10 right-4 sm:right-10 rotate-[-15deg]" alt="CSS Icon">
+        <!-- Floating Icons (Responsive + Positioned within container) -->
+        <div class="absolute inset-0 pointer-events-none">
+          <img src="./assets/image 222.png" class="w-10 sm:w-12 md:w-14 absolute top-0 left-0 translate-x-[-40%] translate-y-[-40%] rotate-[20deg]" alt="VS Code Icon">
+          <img src="./assets/image 223.png" class="w-10 sm:w-12 md:w-14 absolute top-0 right-0 translate-x-[40%] translate-y-[-40%] rotate-12" alt="HTML Icon">
+          <img src="./assets/image 224.png" class="w-10 sm:w-12 md:w-14 absolute bottom-0 left-0 translate-x-[-40%] translate-y-[40%] rotate-[340deg]" alt="JS Icon">
+          <img src="./assets/image 225.png" class="w-10 sm:w-12 md:w-14 absolute bottom-0 right-0 translate-x-[40%] translate-y-[40%] rotate-[-15deg]" alt="CSS Icon">
+        </div>
 
         <!-- Text -->
         <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6">
