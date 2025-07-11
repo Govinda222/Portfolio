@@ -4,64 +4,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <title>Govinda's Portfolio</title>
 </head>
 <body>
   <main class="w-full py-8 font-[Gilroy]">
-
     <!-- Navbar -->
-    <nav class="flex justify-between items-center relative px-4 sm:px-10 lg:px-[10rem]">
-      <h1 class="text-2xl sm:text-xl font-bold tracking-tighter">Portfolio</h1>
-      <div id="nav-links" class="hidden sm:flex gap-6 sm:gap-10">
-        <a class="font-medium text-lg tracking-tighter" href="#">Home</a>
-        <a class="font-medium text-lg opacity-50 tracking-tighter hover:opacity-100 transition" href="#">About</a>
-        <a class="font-medium text-lg opacity-50 tracking-tighter hover:opacity-100 transition" href="#">Contact</a>
-        <a class="font-medium text-lg opacity-50 tracking-tighter hover:opacity-100 transition" href="#">Work Together</a>
+    <nav class="flex justify-between items-center px-4 sm:px-10 md:px-20 lg:px-[10rem]">
+      <h1 class="text-2xl font-bold tracking-tighter">Portfolio</h1>
+      <div id="nav-links" class="hidden sm:flex gap-6">
+        <a class="font-medium text-base tracking-tighter" href="#">Home</a>
+        <a class="font-medium text-base opacity-50 hover:opacity-100 transition" href="#">About</a>
+        <a class="font-medium text-base opacity-50 hover:opacity-100 transition" href="#">Contact</a>
+        <a class="font-medium text-base opacity-50 hover:opacity-100 transition" href="#">Work Together</a>
       </div>
       <div class="sm:hidden">
-        <button id="burger" class="text-3xl focus:outline-none">☰</button>
+        <button id="burger" class="text-3xl">☰</button>
       </div>
-      <div id="mobile-menu" class="hidden absolute top-16 right-0 bg-white border rounded-lg shadow-md flex flex-col items-end px-6 py-4 gap-4 sm:hidden z-50">
-        <a href="#" class="text-lg font-medium">Home</a>
-        <a href="#" class="text-lg font-medium opacity-50 hover:opacity-100">About</a>
-        <a href="#" class="text-lg font-medium opacity-50 hover:opacity-100">Contact</a>
-        <a href="#" class="text-lg font-medium opacity-50 hover:opacity-100">Work Together</a>
+      <div id="mobile-menu" class="hidden absolute top-16 right-4 bg-white border rounded-lg shadow-md flex flex-col px-6 py-4 gap-4 sm:hidden z-50">
+        <a href="#" class="text-base font-medium">Home</a>
+        <a href="#" class="text-base font-medium opacity-50 hover:opacity-100">About</a>
+        <a href="#" class="text-base font-medium opacity-50 hover:opacity-100">Contact</a>
+        <a href="#" class="text-base font-medium opacity-50 hover:opacity-100">Work Together</a>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="px-4 sm:px-10 lg:px-[10rem] w-full mt-20 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8">
-      <div class="leftheadings">
-        <h6 class="text-xl sm:text-2xl -mb-2 tracking-tighter font-bold">Hello I am,</h6>
-        <h1 class="text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] -ml-1 tracking-tighter font-bold leading-none">
-          Govinda.
-        </h1>
-      </div>
-      <div class="rightheadings flex flex-col sm:flex-row gap-2 sm:gap-3 items-start sm:items-center">
-        <h4 class="font-medium tracking-tighter text-base sm:text-xl"><span class="timing">[06:11 PM]</span></h4>
-        <div class="w-20 sm:w-32 h-[1px] bg-black"></div>
-        <h3 class="font-medium tracking-tight text-base sm:text-xl text-nowrap">Creative Front-end Developer</h3>
+    <section class="px-4 sm:px-10 md:px-20 lg:px-[10rem] mt-10 text-center lg:text-left">
+      <div class="flex flex-col lg:flex-row justify-between items-center lg:items-end gap-8">
+        <div>
+          <h6 class="text-lg sm:text-xl font-bold tracking-tighter">Hello I am,</h6>
+          <h1 class="text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] font-bold leading-none tracking-tighter">Govinda.</h1>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 items-center">
+          <h4 class="text-sm sm:text-base font-medium tracking-tighter"><span class="timing">[06:11 PM]</span></h4>
+          <div class="w-16 sm:w-20 h-[1px] bg-black"></div>
+          <h3 class="text-sm sm:text-base font-medium tracking-tight">Creative Front-end Developer</h3>
+        </div>
       </div>
     </section>
 
     <!-- Picture Section -->
-    <section class="w-full px-4 sm:px-10 lg:px-[10rem] mt-10">
+    <section class="px-4 sm:px-10 md:px-20 lg:px-[10rem] mt-10">
       <div class="w-full h-[30rem] sm:h-[40rem] md:h-[50rem] lg:h-[60rem] overflow-hidden rounded-xl">
         <img src="./assets/Mypic.jpg" alt="Govinda's Profile Picture" class="w-full h-full object-cover object-center" />
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="px-4 sm:px-10 lg:px-[10rem] py-10 mt-40 flex items-center justify-center">
-      <div class="text text-center w-full sm:w-2/3 relative">
-        <img src="./assets/image 222.png" class="w-16 absolute -top-10 -left-10 rotate-[20deg]" alt="VS Code Icon">
-        <img src="./assets/image 223.png" class="w-16 absolute -top-10 -right-10 rotate-12" alt="HTML Icon">
-        <img src="./assets/image 224.png" class="w-16 absolute -bottom-10 left-10 rotate-[340deg]" alt="JS Icon">
-        <img src="./assets/image 225.png" class="w-16 absolute -bottom-10 right-10 rotate-[-15deg]" alt="CSS Icon">
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-10">
+    <section class="px-4 sm:px-10 md:px-20 lg:px-[10rem] mt-20 flex justify-center">
+      <div class="text text-center w-full sm:w-4/5 md:w-2/3 relative">
+        <!-- Floating Icons -->
+        <img src="./assets/image 222.png" class="w-10 sm:w-14 md:w-16 absolute -top-6 sm:-top-10 -left-4 sm:-left-10 rotate-[20deg]" alt="VS Code Icon">
+        <img src="./assets/image 223.png" class="w-10 sm:w-14 md:w-16 absolute -top-6 sm:-top-10 -right-4 sm:-right-10 rotate-12" alt="HTML Icon">
+        <img src="./assets/image 224.png" class="w-10 sm:w-14 md:w-16 absolute -bottom-6 sm:-bottom-10 left-4 sm:left-10 rotate-[340deg]" alt="JS Icon">
+        <img src="./assets/image 225.png" class="w-10 sm:w-14 md:w-16 absolute -bottom-6 sm:-bottom-10 right-4 sm:right-10 rotate-[-15deg]" alt="CSS Icon">
+
+        <!-- Text -->
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6">
           [ I design and build experiences ]
         </h1>
-        <p class="text-base sm:text-xl lg:text-2xl font-medium tracking-normal leading-relaxed text-gray-800">
+        <p class="text-base sm:text-lg md:text-xl font-medium leading-relaxed text-gray-800">
           Passionate about creating intuitive and engaging digital interfaces that not only look good but feel right. From wireframes to final build, I transform ideas into seamless, functional, and delightful user experiences across web and mobile platforms.
         </p>
       </div>
@@ -177,18 +180,24 @@
     </section>
 
     <!-- Footer -->
-    <section class="footer max-w-7xl mx-auto px-6 lg:px-20 mt-20 flex flex-col sm:flex-row justify-between gap-4 sm:gap-0">
-      <h3 class="tracking-tight"><span class="font-bold">Govinda</span> Upadhyay</h3>
-      <h4 class="font-medium">11 July, 2025 [7:48 PM]</h4>
-    </section>
+    <footer class="px-4 sm:px-10 md:px-20 lg:px-[10rem] mt-20 flex flex-col sm:flex-row justify-between items-center">
+      <h3 class="tracking-tight">
+        <span class="font-bold">Govinda</span> Upadhyay
+      </h3>
+      <h4 class="font-medium">
+        11 July, 2025 [8:50 PM]
+      </h4>
+    </footer>
   </main>
 
   <script>
-    setInterval(function () {
-      var dt = new Date();
-      var str = dt.getHours() % 12 + " : " + dt.getMinutes();
-      dt.getHours() % 12 > 0 ? str += " PM" : str += " AM";
-      document.querySelector(".timing").textContent = str;
+    setInterval(() => {
+      const dt = new Date();
+      let hours = dt.getHours();
+      let minutes = dt.getMinutes().toString().padStart(2, '0');
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12 || 12;
+      document.querySelector(".timing").textContent = `[${hours}:${minutes} ${ampm}]`;
     }, 1000);
 
     const burger = document.getElementById("burger");
